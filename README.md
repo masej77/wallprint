@@ -6,10 +6,14 @@ Komplet, responsiv dansk webapplikation til en vertikal væg- og gulvprint-forre
 
 ```text
 wallprint/
-├── index.html    # Semantisk HTML5 struktur (Navigation, Hero, TWF1000 Specs, Visualizer, FAQ, Modal)
-├── styles.css    # Skandinavisk arkitektonisk designsystem & responsivt layout
-├── app.js        # Interaktivt HTML5 <canvas>, skalering, målberegning & dynamisk prismotor
-└── README.md     # Projektdokumentation
+├── public/
+│   ├── index.html    # Semantisk HTML5 struktur (Navigation, Hero, TWF1000 Specs, Visualizer, FAQ, Modal)
+│   ├── styles.css    # Skandinavisk arkitektonisk designsystem & responsivt layout
+│   └── app.js        # Interaktivt HTML5 <canvas>, skalering, målberegning & dynamisk prismotor
+├── src/
+│   └── worker.js     # Cloudflare Worker entry point (serverer statiske filer fra public/)
+├── wrangler.jsonc    # Cloudflare Wrangler konfiguration
+└── README.md         # Projektdokumentation
 ```
 
 ## Nøglefunktioner
